@@ -1,0 +1,29 @@
+{
+  "name": "crypto-exchange-latency",
+  "version": "1.0.0",
+  "description": "Testing latency between different exchanges using ccxt library",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Effanuel/crypto-exchange-latency.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Effanuel/crypto-exchange-latency/issues"
+  },
+  "homepage": "https://github.com/Effanuel/crypto-exchange-latency#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ccxt": "^1.81.77",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^17.0.31"
+  }
+}

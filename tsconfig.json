@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "noEmit": true,
+    "sourceMap": true,
+    "lib": ["esnext"],
+    "allowJs": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "types": ["node"],
+    "typeRoots": ["./src/@types", "node_modules/@types", "src/typings.d.ts"],
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["./src/**/*.ts", "src/calculateProfit.js"],
+  "exclude": ["node_modules/"],
+  "ts-node": {
+    "files": true,
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "commonjs",
+      "types": ["node", "jest"],
+      "typeRoots": ["./src/@types", "node_modules/@types", "src/typings.d.ts"],
+      "noUnusedLocals": false
+    }
+  }
+}
