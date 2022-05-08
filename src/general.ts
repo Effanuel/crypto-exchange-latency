@@ -16,11 +16,11 @@ export const printAverage = <T extends Latency>(arr: T[]) => {
   );
 };
 
-export function getRequestLatency(url: string) {
+export function getRequestLatency(url: string, name: string) {
   return async (): Promise<Latency> => {
     const start = Date.now();
     await axios(url);
     const end = Date.now();
-    return { exchange: "coinflex", latency: end - start };
+    return { exchange: name, latency: end - start };
   };
 }

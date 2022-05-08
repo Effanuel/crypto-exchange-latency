@@ -1,9 +1,11 @@
 import { getRequestLatency } from "./general";
 
 export const getBitfinexMarkets = getRequestLatency(
-  "https://api-pub.bitfinex.com/v2/tickers/?symbols=fUSD,tBTCUSD"
+  "https://api-pub.bitfinex.com/v2/tickers/?symbols=fUSD,tBTCUSD",
+  "bitfinex"
 );
 
 export const getCoinflexMarkets = getRequestLatency(
-  "https://v2api.coinflex.com/v2/all/markets"
+  "https://v2api.coinflex.com/v2/all/markets",
+  "coinflex"
 );
